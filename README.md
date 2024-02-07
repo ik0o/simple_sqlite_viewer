@@ -4,21 +4,27 @@ it's simple cli sqlite reader for windows and linux
 
 ## usage
 
-general usage: sqlread <file_name>/<command> <command> [options]
-examples:
-  sqlread -c
-  sqlread test_db.db read a='aaa' and b='bbb' lim 1-100
-  sqlread test_db.db -r new
+### general usage: 
+```sh
+sqlread <file_name>/<command> <command> [options] <br/>
+```
+### examples: 
+
+sqlread -c <br/>
+sqlread test_db.db read a='aaa' and b='bbb' lim 1-100 <br/>
+sqlread test_db.db -r new
 
 ## commands
 
-short\long   |  description                           |  arguments                     |
-=============+========================================+================================+
--h   help    |  print this text                       |                                |
--r   read    |  read specific data from database      |  <table> <max> <lims> <filters>|
--c   clean   |  clean tmp data                        |  <table>                       |
--i   info    |  print info about database and tables  |  <table>                       |
--cfg config  |  configurate sqlread                   |                                |
+```
+| short\long   |  description                           |  arguments                      |
+|--------------|----------------------------------------|---------------------------------|
+| -h   help    |  print this text                       |                                 |
+| -r   read    |  read specific data from database      |  <table> <max> <lims> <filters> |
+| -c   clean   |  clean tmp data                        |  <table>                        |
+| -i   info    |  print info about database and tables  |  <table>                        |
+| -cfg config  |  configurate sqlread                   |                                 |
+```
 
 ### read:
 read all data from table or tables, also you can use "new" option
