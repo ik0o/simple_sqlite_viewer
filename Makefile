@@ -10,7 +10,6 @@ OBJECTS = $(addsuffix .o, $(basename $(notdir $(SOURCES))))
 OBJECTS += sqlite3.o
 CXXFLAGS = -Wall -Wformat
 UNAME_S = $(shell uname -s)
-UNAME_S = Windows_NT
 DEL_S = rm -rf
 
 ifeq ($(UNAME_S), Linux)
