@@ -27,11 +27,11 @@ sqlread test_db.db -r new
 ```
 
 ### read:
-read all data from table or tables, also you can use "new" option
-that reads data added since last sqlread run
-in filters you can use: OR, or, And, and, = (in one argument, not
-a = 'a', only a='a'), LIKE, like (only a LIKE 'a', LIKE syntax is
-default sqlite LIKE syntax)
+read all data from table or tables, also you can use "new" option <br/>
+that reads data added since last sqlread run <br/>
+in filters you can use: `OR`, `or`, `And`, `and`, `=` (in one argument, <br/>
+not `a = 'a'`, only `a='a'`), `LIKE`, `like` (only a `LIKE 'a'`, LIKE <br/>
+syntax is default sqlite LIKE syntax) <br/>
 
 ### clean:
 clean all tmp data (data about previously opened databases)
